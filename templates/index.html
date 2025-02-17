@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>絵画作者識別アプリ</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <a class="header-logo" href="#">絵画作者識別アプリ</a>
+    </header>
+
+    <div class="main">    
+        <h2> AIが送信された画像の作者を識別します (ゴッホとダ・ヴィンチに限ります)</h2>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="submit!" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+    </div>
+
+    <footer>
+        <small>&copy; 2025 kanou, inc.</small>   
+    </footer>
+</body>
+</html>
